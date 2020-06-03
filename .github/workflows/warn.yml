@@ -46,3 +46,8 @@ jobs:
       if: always()
       run: |
         echo "::warning file=#> > SECRET%3A INPUT PASSED TO pypa gh action pypi%2Dpublish GITHUB ACTION::warn on multiword file"
+    - name: Publish a Python distribution to PyPI
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        user: __token__
+        password: 'dummy'
