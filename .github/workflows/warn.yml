@@ -45,4 +45,4 @@ jobs:
     - name: Emit warn on multiword file
       if: always()
       run: |
-        echo "::warning file=SECRET%3A INPUT PASSED TO pypa gh action pypi%2Dpublish GITHUB ACTION::warn on multiword file"
+        echo "::warning file=> > SECRET%3A INPUT PASSED TO pypa gh action pypi%2Dpublish GITHUB ACTION::warn on multiword file"
