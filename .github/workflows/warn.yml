@@ -42,3 +42,7 @@ jobs:
       if: always()
       run: |
         echo "::warning ::warn on no file and no pos"
+    - name: Emit warn on multiword file
+      if: always()
+      run: |
+        echo "::warning file=SOME SECRET POINTER::warn on multiword file"
